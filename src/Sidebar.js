@@ -1,47 +1,34 @@
-function Sugestao(props) {
-  return (
-    <div class="sugestao">
-      <div class="usuario">
-        <img src={props.image} />
-        <div class="texto">
-          <div class="nome">{props.name}</div>
-          <div class="razao">{props.razao}</div>
-        </div>
-      </div>
-      <div class="seguir">Seguir</div>
-    </div>
-  );
-}
+import Sugestao from './SidebarSuggestions'
 
 export default function Sidebar() {
-
+  
   const suggestions = [
     {
-      image:"./img/bad.vibes.memes.svg",
-      name:"bad.vibes.memes",
-      razao:"Segue você"
+        image: "./img/bad.vibes.memes.svg",
+        name: "bad.vibes.memes",
+        razao: "Segue você",
     },
     {
-      image:"./img/chibirdart.svg",
-      name:"chibirdart",
-      razao:"Segue você"
+        image: "./img/chibirdart.svg",
+        name: "chibirdart",
+        razao: "Segue você",
     },
     {
-      image:"./img/razoesparaacreditar.svg",
-      name:"razoesparaacreditar",
-      razao:"Novo no Instagram"
+        image: "./img/razoesparaacreditar.svg",
+        name: "razoesparaacreditar",
+        razao: "Novo no Instagram",
     },
     {
-      image:"./img/adorable_animals.svg",
-      name:"adorable_animals",
-      razao:"Segue você"
+        image: "./img/adorable_animals.svg",
+        name: "adorable_animals",
+        razao: "Segue você",
     },
     {
-      image:"./img/smallcutecats.svg",
-      name:"smallcutecats",
-      razao:"Segue você"
+        image: "./img/smallcutecats.svg",
+        name: "smallcutecats",
+        razao: "Segue você",
     },
-  ]
+];
 
   return (
     <div class="sidebar">
