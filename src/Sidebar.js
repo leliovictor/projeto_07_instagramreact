@@ -1,4 +1,5 @@
 import Sugestao from './SidebarSuggestions'
+import User from './User';
 
 export default function Sidebar() {
   
@@ -32,13 +33,7 @@ export default function Sidebar() {
 
   return (
     <div class="sidebar">
-      <div class="usuario">
-        <img src="./img/catanacomics.svg" />
-        <div class="texto">
-          <strong>catanacomics</strong>
-          Catana
-        </div>
-      </div>
+      <User image="./img/catanacomics.svg" userName="catanacomics" name="Catana"/>
 
       <div class="sugestoes">
         <div class="titulo">
