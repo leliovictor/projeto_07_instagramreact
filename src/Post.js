@@ -1,4 +1,9 @@
+import React from 'react';
+
 export default function Post(props) {
+  
+  const [liked,setLiked] = React.useState(false);
+
   return (
     <div class="post">
       <div class="topo">
@@ -12,13 +17,13 @@ export default function Post(props) {
       </div>
 
       <div class="conteudo">
-        <img src={props.image} />
+        <img onClick={() => setLiked(true)} src={props.image} />
       </div>
 
       <div class="fundo">
         <div class="acoes">
           <div>
-            <ion-icon name="heart-outline"></ion-icon>
+            {liked ? <ion-icon onClick={()=>setLiked(false)} id="heart" name="heart"></ion-icon> : <ion-icon onClick={()=>setLiked(true)} name="heart-outline"></ion-icon>}
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>

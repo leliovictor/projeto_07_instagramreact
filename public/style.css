@@ -176,7 +176,7 @@ body {
   margin-right: 10px;
 }
 
-.post .usuario, .post .topo img, .post .fundo img, .post ion-icon, .post strong {
+.post .usuario, .post .topo img, .post .fundo img, .post ion-icon, .post strong, .post .conteudo img {
   cursor: pointer;
 }
 
@@ -308,6 +308,10 @@ body {
 
 .logo-mobile, .instagram-mobile {
   display: none !important;
+}
+
+#heart {
+  fill: red;
 }
 
 @media (max-width: 935px) {
